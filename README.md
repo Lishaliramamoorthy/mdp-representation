@@ -3,34 +3,60 @@
 ## AIM:
 To represent any one real-world problem in MDP
 
-## PROBLEM STATEMENT:
-
-### Problem Description
-Write your answer here
+## PROBLEM DESCRIPTION:
+Imagine a smart city with multiple traffic intersections that need efficient traffic signal control to minimize congestion and reduce travel time for vehicles.
 
 ### State Space
-Write your answer here
+state_space = {
+    "Intersection1_Traffic": ("Low", "Moderate", "High"),  
+    "Intersection2_Traffic": ("Low", "Moderate", "High"),
+    # Additional intersections and relevant states
+}
+
+
 
 ### Sample State
-Write your answer here
+sample_state = {
+    "Product1_Inventory": 8,
+    "Product2_Inventory": 12,
+    "Product3_Inventory": 5,
+    "Demand_Forecast": 10
+}
+
 
 ### Action Space
-Write your answer here
+action_space = {
+    "SignalChange_Red": 0,  
+    "SignalChange_Yellow": 1,
+    "SignalChange_Green": 2
+}
+
+
 
 ### Sample Action
-Write your answer here
+sample_action = {
+    "OrderProduct1": 2,
+    "OrderProduct2": 3,
+    "OrderProduct3": 1,
+    "NoOrder": 0
+}
+
 
 ### Reward Function
-Write your answer here
+reward_function = {
+    "TrafficFlow": +1,  # Reward for smoother traffic flow
+    "WaitTimePenalty": -0.5,  # Penalty for increased waiting time at intersections
+}
+
 
 ### Graphical Representation
 Write your answer here
 
 ## PYTHON REPRESENTATION:
-Write your code here
+
 
 ## OUTPUT:
-Write your Python output here
+
 
 ## RESULT:
 Write your output here
